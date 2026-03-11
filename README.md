@@ -3,187 +3,100 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Royal Taste Restaurant</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<title>Saurabh Restaurant</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-}
-
 body{
-background:#111;
-color:white;
+margin:0;
+font-family:Arial;
+background:#f4f4f4;
 }
-
-/* HEADER */
 
 header{
-display:flex;
-justify-content:space-between;
-align-items:center;
-padding:20px 10%;
-background:#000;
-position:sticky;
-top:0;
+background:#111;
+color:white;
+padding:20px;
+text-align:center;
 }
 
-.logo{
-font-size:24px;
-color:#ffb400;
-font-weight:600;
+nav{
+background:#333;
+padding:10px;
+text-align:center;
 }
 
 nav a{
-margin-left:20px;
-text-decoration:none;
 color:white;
-font-weight:500;
-transition:0.3s;
+margin:10px;
+text-decoration:none;
+font-size:18px;
 }
-
-nav a:hover{
-color:#ffb400;
-}
-
-/* HERO */
 
 .hero{
-height:90vh;
+background:url("https://images.unsplash.com/photo-1504674900247-0877df9cc836");
+background-size:cover;
+height:300px;
 display:flex;
-justify-content:center;
 align-items:center;
-flex-direction:column;
-text-align:center;
-background:url("https://images.unsplash.com/photo-1504674900247-0877df9cc836") center/cover;
-}
-
-.hero h1{
-font-size:60px;
-margin-bottom:10px;
-}
-
-.hero p{
-font-size:20px;
-margin-bottom:20px;
-}
-
-.hero button{
-padding:12px 30px;
-background:#ffb400;
-border:none;
-font-size:16px;
-cursor:pointer;
-border-radius:5px;
-}
-
-/* MENU */
-
-.menu{
-padding:80px 10%;
-text-align:center;
-background:#1b1b1b;
-}
-
-.menu h2{
+justify-content:center;
+color:white;
 font-size:40px;
-margin-bottom:40px;
-}
-
-.menu-container{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.card{
-background:#222;
-border-radius:10px;
-overflow:hidden;
-transition:0.3s;
-}
-
-.card:hover{
-transform:scale(1.05);
-}
-
-.card img{
-width:100%;
-height:200px;
-object-fit:cover;
-}
-
-.card-content{
-padding:20px;
-}
-
-.price{
-color:#ffb400;
-margin-top:10px;
 font-weight:bold;
 }
 
-/* ABOUT */
-
-.about{
-padding:80px 10%;
-display:flex;
-flex-wrap:wrap;
-align-items:center;
-gap:40px;
-}
-
-.about img{
-width:400px;
-border-radius:10px;
-}
-
-.about-text{
-max-width:500px;
-}
-
-/* CONTACT */
-
-.contact{
-padding:80px 10%;
-background:#1b1b1b;
+.menu{
+padding:40px;
 text-align:center;
 }
 
-form{
-max-width:500px;
-margin:auto;
+.menu h2{
+margin-bottom:20px;
+}
+
+.menu-items{
 display:flex;
-flex-direction:column;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.item{
+background:white;
+padding:20px;
+border-radius:10px;
+width:200px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.contact{
+background:#222;
+color:white;
+padding:40px;
+text-align:center;
 }
 
 input,textarea{
-padding:12px;
-margin:10px 0;
+width:80%;
+padding:10px;
+margin:10px;
 border:none;
 border-radius:5px;
 }
 
 button{
-padding:12px;
-background:#ffb400;
+padding:10px 20px;
+background:red;
+color:white;
 border:none;
 cursor:pointer;
-font-size:16px;
 }
 
-/* FOOTER */
-
 footer{
-text-align:center;
-padding:20px;
 background:black;
-margin-top:30px;
+color:white;
+text-align:center;
+padding:10px;
 }
 
 </style>
@@ -192,116 +105,69 @@ margin-top:30px;
 <body>
 
 <header>
-
-<div class="logo">Royal Taste</div>
+<h1>Saurabh Restaurant</h1>
+<p>Best Food in Town</p>
+</header>
 
 <nav>
 <a href="#">Home</a>
-<a href="#menu">Menu</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
+<a href="#">Menu</a>
+<a href="#">Contact</a>
 </nav>
 
-</header>
-
-<section class="hero">
-
-<h1>Welcome to Royal Taste</h1>
-<p>Experience the best food in town</p>
-<button>View Menu</button>
-
-</section>
-
-<section class="menu" id="menu">
-
-<h2>Our Special Menu</h2>
-
-<div class="menu-container">
-
-<div class="card">
-<img src="https://images.unsplash.com/photo-1594007654729-407eedc4fe24">
-<div class="card-content">
-<h3>Cheese Pizza</h3>
-<p>Fresh cheesy pizza with toppings</p>
-<div class="price">₹299</div>
-</div>
+<div class="hero">
+Delicious Food
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
-<div class="card-content">
-<h3>Classic Burger</h3>
-<p>Juicy grilled burger</p>
-<div class="price">₹199</div>
-</div>
+<section class="menu">
+
+<h2>Our Menu</h2>
+
+<div class="menu-items">
+
+<div class="item">
+<h3>Pizza</h3>
+<p>₹199</p>
 </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1525755662778-989d0524087e">
-<div class="card-content">
-<h3>Italian Pasta</h3>
-<p>Creamy white sauce pasta</p>
-<div class="price">₹249</div>
+<div class="item">
+<h3>Burger</h3>
+<p>₹149</p>
 </div>
+
+<div class="item">
+<h3>Pasta</h3>
+<p>₹179</p>
+</div>
+
+<div class="item">
+<h3>Cold Drink</h3>
+<p>₹59</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="about" id="about">
-
-<img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5">
-
-<div class="about-text">
-
-<h2>About Our Restaurant</h2>
-
-<p>
-Royal Taste is one of the best restaurants offering
-fresh and delicious food. Our chefs prepare every
-dish with passion and high-quality ingredients.
-</p>
-
-</div>
-
-</section>
-
-<section class="contact" id="contact">
+<section class="contact">
 
 <h2>Contact Us</h2>
 
-<form id="contactForm">
+<input type="text" placeholder="Your Name"><br>
 
-<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email"><br>
 
-<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Message"></textarea><br>
 
-<textarea placeholder="Your Message" rows="4"></textarea>
-
-<button type="submit">Send Message</button>
-
-</form>
+<button>Send Message</button>
 
 </section>
 
 <footer>
 
-<p>© 2026 Royal Taste Restaurant</p>
+<p>© 2026 Saurabh Restaurant</p>
 
 </footer>
-
-<script>
-
-document.getElementById("contactForm").addEventListener("submit",function(e){
-
-e.preventDefault();
-
-alert("Message Sent Successfully!");
-
-});
-
-</script>
 
 </body>
 </html>
